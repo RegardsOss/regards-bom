@@ -71,7 +71,6 @@
 		<access.bootstrap.version>1.1.0</access.bootstrap.version>
 		<accessproject.bootstrap.version>1.1.0</accessproject.bootstrap.version>
 		<storage.bootstrap.version>1.1.0</storage.bootstrap.version>
-		<dataprovider.bootstrap.version>1.1.0</dataprovider.bootstrap.version>
 		<frontend.bootstrap.version>1.1.0</frontend.bootstrap.version>
 
 		<!-- Tests -->
@@ -109,7 +108,6 @@
 		<fr.cnes.regards.modules.metrics.version>1.1.0</fr.cnes.regards.modules.metrics.version>
 		<fr.cnes.regards.modules.templates.version>1.1.0</fr.cnes.regards.modules.templates.version>
 		<fr.cnes.regards.modules.storage.version>1.1.0</fr.cnes.regards.modules.storage.version>
-		<fr.cnes.regards.modules.dataprovider.version>1.1.0</fr.cnes.regards.modules.dataprovider.version>
 		<fr.cnes.regards.modules.search.version>1.1.0</fr.cnes.regards.modules.search.version>
 		<fr.cnes.regards.modules.opensearch.version>1.1.0</fr.cnes.regards.modules.opensearch.version>
 		<fr.cnes.regards.modules.catalog-services.version>1.1.0</fr.cnes.regards.modules.catalog-services.version>
@@ -681,12 +679,6 @@
 				<groupId>fr.cnes.regards.modules.storage</groupId>
 				<artifactId>storage-client</artifactId>
 				<version>${fr.cnes.regards.modules.storage.version}</version>
-			</dependency>
-			<!-- Data provider -->
-			<dependency>
-				<groupId>fr.cnes.regards.modules</groupId>
-				<artifactId>acquisition-rest</artifactId>
-				<version>${fr.cnes.regards.modules.dataprovider.version}</version>
 			</dependency>
 			<!-- Data Access -->
 			<dependency>
