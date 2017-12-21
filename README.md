@@ -2,7 +2,7 @@
 
 REGARDS BOM is used to centralize dependency management to have a consistent set of COTS and microservices. It's the first repository to build!
 
-For now, this version has not yet been tested under operational conditions and is considered as **beta**.
+REGARDS is still under heavy development. Operational version V1.0.0 is planed for 2018.
 
 ## Build requirements
 
