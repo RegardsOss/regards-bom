@@ -4,7 +4,7 @@ REGARDS BOM is used to centralize dependency management to have a consistent set
 
 For now, this version has not yet been tested under operational conditions and is considered as **beta**.
 
-## Build requirement
+## Build requirements
 
 Build relies on :
 * Maven 3+
