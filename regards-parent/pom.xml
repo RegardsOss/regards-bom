@@ -135,7 +135,7 @@
                     </resource>
                 </resources>
                 <filters>
-                    <filter>${env.REGARDS_HOME}/regards/regards-parent/LT.properties</filter>
+                    <filter>${env.REGARDS_HOME}/regards-bom/regards-parent/LT.properties</filter>
                 </filters>
             </build>
         </profile>
