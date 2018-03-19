@@ -23,7 +23,7 @@
 
 	<groupId>fr.cnes.regards</groupId>
 	<artifactId>regards-parent</artifactId>
-	<version>2.0.1-RELEASE</version>
+	<version>2.0.0-RELEASE</version>
 	<packaging>pom</packaging>
 
 	<name>Regards Parent</name>
@@ -73,7 +73,7 @@
         <!-- Tells Sonar where the Jacoco coverage result file is located for IT -->
         <sonar.jacoco.itReportPath>${jacoco.outputDir}/${jacoco.out.it.file}</sonar.jacoco.itReportPath>
         <spring.hibernate.version>5.0.9.Final</spring.hibernate.version>
-        <regards.bom.version>2.0.1-RELEASE</regards.bom.version>
+        <regards.bom.version>2.0.0-RELEASE</regards.bom.version>
     </properties>
 
     <dependencies>
