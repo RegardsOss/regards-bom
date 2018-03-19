@@ -14,7 +14,7 @@
 
     <groupId>fr.cnes.regards</groupId>
     <artifactId>regards-dependencies</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.1-RELEASE</version>
     <packaging>pom</packaging>
 
     <name>Regards Dependencies</name>
