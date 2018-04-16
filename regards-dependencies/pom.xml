@@ -568,12 +568,30 @@
             <dependency>
                 <groupId>fr.cnes.regards.modules.datasources</groupId>
                 <artifactId>datasource-oracle-plugins</artifactId>
-                <version>${fr.cnes.regards.modules.datasources.version}</version>
+                <version>2.0.0-RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.datasources</groupId>
+                <artifactId>datasource-oracle-plugins</artifactId>
+                <version>2.0.0-RELEASE</version>
+                <classifier>shaded</classifier>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.datasources.plugins</groupId>
                 <artifactId>postgresql-datasource</artifactId>
                 <version>2.0.0-RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.datasources.plugins</groupId>
+                <artifactId>postgresql-datasource</artifactId>
+                <version>2.0.0-RELEASE</version>
+                <classifier>shaded</classifier>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.datasources.plugins</groupId>
+                <artifactId>aip-datasource</artifactId>
+                <version>2.0.0-RELEASE</version>
+                <classifier>shaded</classifier>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.datasources.plugins</groupId>
@@ -819,6 +837,12 @@
 				<groupId>fr.cnes.regards.modules.storage.plugins</groupId>
 				<artifactId>catalog-security-delegation</artifactId>
 				<version>2.0.0-RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.modules.storage.plugins</groupId>
+				<artifactId>catalog-security-delegation</artifactId>
+				<version>2.0.0-RELEASE</version>
+				<classifier>shaded</classifier>
 			</dependency>
             <!-- Data provider --> 
             <dependency> 
