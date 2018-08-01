@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- Copyright 2017 CNES - CENTRE NATIONAL d'ETUDES SPATIALES
+ Copyright 2017-2018 CNES - CENTRE NATIONAL d'ETUDES SPATIALES
  
  This file is part of REGARDS.
  
@@ -23,6 +23,7 @@
 
 	<groupId>fr.cnes.regards</groupId>
 	<artifactId>regards-boot-parent</artifactId>
+	<version>2.0.0-RELEASE</version>
 	<packaging>pom</packaging>
 
 	<name>Regards Boot Parent</name>
@@ -51,12 +52,14 @@
 	<parent>
 		<groupId>fr.cnes.regards</groupId>
 		<artifactId>regards-parent</artifactId>
-		<version>1.1.0</version>
+		<version>2.0.0-RELEASE</version>
 		<relativePath>../regards-parent/</relativePath>
 	</parent>
 
 	<properties>
-		<docker.entryPoint>["./wait-for-it.sh", "rs_config:9031", "-t", "0", "--", "./wait-for-it.sh", "rs_registry:9032", "-t", "0", "--","./wait-for-it.sh", "rs_admin:9033", "-t", "0", "--", "java", "-Xmx128m", "-Djava.security.egd=file:/dev/./urandom", "-agentlib:jdwp=transport=dt_socket,address=10500,server=y,suspend=n", "-jar", "/${project.build.finalName}.${project.packaging}"]</docker.entryPoint>
+		<microservice.heap.size>128m</microservice.heap.size>
+		<!-- Default entrypoint for microservices, it should be overridden if needed -->
+		<docker.entryPoint>["./wait-for-it.sh", "rs_config:9031", "-t", "0", "--", "./wait-for-it.sh", "rs_registry:9032", "-t", "0", "--","./wait-for-it.sh", "rs_admin:9033", "-t", "0", "--", "./start.sh","${project.build.finalName}.${project.packaging}","-Xmx${microservice.heap.size}"]</docker.entryPoint>
 	</properties>
 
 	<build>
@@ -71,7 +74,7 @@
 						<skipDockerBuild>false</skipDockerBuild>
 						<forceTags>true</forceTags>
 						<imageName>${docker.registry.host}/${fr.cnes.regards.docker.image.name}</imageName>
-						<baseImage>${docker.registry.host}/rs-alpine-oraclejdk8</baseImage>
+						<baseImage>${docker.registry.host}/rs-alpine-openjdk8</baseImage>
 						<serverId>REGARDS-DockerHub</serverId>
 						<registryUrl>${docker.registry.host}</registryUrl>
 						<imageTags>
