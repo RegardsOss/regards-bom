@@ -134,17 +134,17 @@
         <fr.cnes.regards.microservices.administration.remote-authorities-provider>3.1.0-RC</fr.cnes.regards.microservices.administration.remote-authorities-provider>
 
 
-        <fr.cnes.regards.modules.ingest.plugins.version>3.0.0-SNAPSHOT</fr.cnes.regards.modules.ingest.plugins.version>
-        <fr.cnes.regards.modules.acquisition.plugins.version>3.0.0-SNAPSHOT</fr.cnes.regards.modules.acquisition.plugins.version>
+        <fr.cnes.regards.modules.ingest.plugins.version>3.1.0-RC</fr.cnes.regards.modules.ingest.plugins.version>
+        <fr.cnes.regards.modules.acquisition.plugins.version>3.1.0-RC</fr.cnes.regards.modules.acquisition.plugins.version>
 
         <custom.deployment.version>3.1.0-RC</custom.deployment.version>
         
         <!-- CNES remote storages -->
-        <fr.cnes.regards.storages.version>3.0.0-SNAPSHOT</fr.cnes.regards.storages.version>
-        <fr.cnes.regards.storages.staf.version>3.0.0-SNAPSHOT</fr.cnes.regards.storages.staf.version>
-        <fr.cnes.regards.storages.hpss.version>3.0.0-SNAPSHOT</fr.cnes.regards.storages.hpss.version>
-        <fr.cnes.regards.storages.mission.version>3.0.0-SNAPSHOT</fr.cnes.regards.storages.mission.version>
-        <fr.cnes.regards.storages.noop.version>3.0.0-SNAPSHOT</fr.cnes.regards.storages.noop.version>
+        <fr.cnes.regards.storages.version>3.1.0-RC</fr.cnes.regards.storages.version>
+        <fr.cnes.regards.storages.staf.version>3.1.0-RC</fr.cnes.regards.storages.staf.version>
+        <fr.cnes.regards.storages.hpss.version>3.1.0-RC</fr.cnes.regards.storages.hpss.version>
+        <fr.cnes.regards.storages.mission.version>3.1.0-RC</fr.cnes.regards.storages.mission.version>
+        <fr.cnes.regards.storages.noop.version>3.1.0-RC</fr.cnes.regards.storages.noop.version>
 
         <!-- COTS -->
         <flyway.version>4.2.0</flyway.version>
