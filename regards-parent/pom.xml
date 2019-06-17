@@ -23,7 +23,7 @@
 
 	<groupId>fr.cnes.regards</groupId>
 	<artifactId>regards-parent</artifactId>
-	<version>3.0.0-RELEASE</version>
+	<version>0.4.0</version>
 	<packaging>pom</packaging>
 
 	<name>Regards Parent</name>
@@ -60,7 +60,8 @@
 		<resource.delimiter>@</resource.delimiter> <!-- delimiter that doesn't clash with Spring ${} placeholders -->
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-        <docker.registry.host>172.26.46.158</docker.registry.host>
+		<docker.registry.host>172.26.46.158</docker.registry.host>
+		<docker.registry.baseImage>rs-alpine-openjdk8</docker.registry.baseImage>
         <sonar.language>java</sonar.language>
         <sonar.jacoco.reportMissing.force.zero>true</sonar.jacoco.reportMissing.force.zero>
         <jacoco.outputDir>${project.basedir}/target/coverage-reports</jacoco.outputDir>
@@ -72,8 +73,9 @@
         <jacoco.out.it.file>jacoco-it.exec</jacoco.out.it.file>
         <!-- Tells Sonar where the Jacoco coverage result file is located for IT -->
         <sonar.jacoco.itReportPath>${jacoco.outputDir}/${jacoco.out.it.file}</sonar.jacoco.itReportPath>
-        <spring.hibernate.version>5.0.9.Final</spring.hibernate.version>
-        <regards.bom.version>3.0.0-RELEASE</regards.bom.version>
+        <spring.hibernate.version>5.3.7.Final</spring.hibernate.version>
+		<spring.version>5.1.4.RELEASE</spring.version>
+        <regards.bom.version>0.4.0</regards.bom.version>
     </properties>
 
     <dependencies>
