@@ -5,13 +5,13 @@
     <parent>
         <groupId>fr.cnes.regards</groupId>
         <artifactId>regards-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
 	<relativePath>../regards-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>regards-suppress-cve</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>regards-suppress-cve</name>
     <description>Declares CVE suppression file for automatic check</description>
