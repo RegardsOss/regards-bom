@@ -199,7 +199,7 @@
         <org.elasticsearch.version>6.5.0</org.elasticsearch.version>
         <!-- Specify version to avoid incompatibility between elasticsearch and
             spring bring ones -->
-        <io.netty.version>4.1.29.Final</io.netty.version>
+        <io.netty.version>4.1.50.Final</io.netty.version>
         <org.locationtech.jts.version>1.16.0</org.locationtech.jts.version>
         <org.locationtech.spatial4j.version>0.7</org.locationtech.spatial4j.version>
         <com.google.guava.version>27.0.1-jre</com.google.guava.version>
