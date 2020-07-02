@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2017-2019 CNES - CENTRE NATIONAL d'ETUDES SPATIALES This file 
+<!-- Copyright 2017-2020 CNES - CENTRE NATIONAL d'ETUDES SPATIALES This file 
 	is part of REGARDS. REGARDS is free software: you can redistribute it and/or 
 	modify it under the terms of the GNU General Public License as published 
 	by the Free Software Foundation, either version 3 of the License, or (at 
@@ -15,7 +15,7 @@
 
     <groupId>fr.cnes.regards</groupId>
     <artifactId>regards-dependencies</artifactId>
-    <version>0.4.1</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>Regards Dependencies</name>
@@ -45,121 +45,124 @@
         <!-- Dependencies versions -->
 
         <!-- Framework starters -->
-        <amqp.starter.version>0.4.1</amqp.starter.version>
-        <authentication.starter.version>0.4.1</authentication.starter.version>
-        <cloud.starter.version>0.4.1</cloud.starter.version>
-        <feign.starter.version>0.4.1</feign.starter.version>
-        <geojson.docs.version>0.4.1</geojson.docs.version>
-        <geojson.starter.version>0.4.1</geojson.starter.version>
-        <gson.starter.version>0.4.1</gson.starter.version>
-        <proxy.starter.version>0.4.1</proxy.starter.version>
-        <hateoas.starter.version>0.4.1</hateoas.starter.version>
-        <jpa.data.version>0.4.1</jpa.data.version>
-        <jpa.common.version>0.4.1</jpa.common.version>
-        <jpa.instance.starter.version>0.4.1</jpa.instance.starter.version>
-        <jpa.multitenant.starter.version>0.4.1</jpa.multitenant.starter.version>
-        <microservice.core.version>0.4.1</microservice.core.version>
-        <microservice.starter.version>0.4.1</microservice.starter.version>
-        <module.starter.version>0.4.1</module.starter.version>
-        <multitenant.starter.version>0.4.1</multitenant.starter.version>
-        <fr.cnes.regards.framework.notification.version>0.4.1</fr.cnes.regards.framework.notification.version>
-        <security.starter.version>0.4.1</security.starter.version>
-        <swagger.starter.version>0.4.1</swagger.starter.version>
-        <plugins.docs.version>0.4.1</plugins.docs.version>
-        <oais.docs.version>0.4.1</oais.docs.version>
-        <oais.starter.version>0.4.1</oais.starter.version>
-        <encryption.starter.version>0.4.1</encryption.starter.version>
+        <amqp.starter.version>1.0.1</amqp.starter.version>
+        <authentication.starter.version>1.0.1</authentication.starter.version>
+        <cloud.starter.version>1.0.1</cloud.starter.version>
+        <feign.starter.version>1.0.1</feign.starter.version>
+        <geojson.docs.version>1.0.1</geojson.docs.version>
+        <geojson.starter.version>1.0.1</geojson.starter.version>
+        <gson.starter.version>1.0.1</gson.starter.version>
+        <proxy.starter.version>1.0.1</proxy.starter.version>
+        <hateoas.starter.version>1.0.1</hateoas.starter.version>
+        <jpa.data.version>1.0.1</jpa.data.version>
+        <jpa.common.version>1.0.1</jpa.common.version>
+        <jpa.instance.starter.version>1.0.1</jpa.instance.starter.version>
+        <jpa.multitenant.starter.version>1.0.1</jpa.multitenant.starter.version>
+        <microservice.core.version>1.0.1</microservice.core.version>
+        <microservice.starter.version>1.0.1</microservice.starter.version>
+        <module.starter.version>1.0.1</module.starter.version>
+        <multitenant.starter.version>1.0.1</multitenant.starter.version>
+        <fr.cnes.regards.framework.notification.version>1.0.1</fr.cnes.regards.framework.notification.version>
+        <security.starter.version>1.0.1</security.starter.version>
+        <swagger.starter.version>1.0.1</swagger.starter.version>
+        <plugins.docs.version>1.0.1</plugins.docs.version>
+        <oais.docs.version>1.0.1</oais.docs.version>
+        <oais.starter.version>1.0.1</oais.starter.version>
+        <encryption.starter.version>1.0.1</encryption.starter.version>
 
         <!-- Bootstrap -->
-        <config.bootstrap.version>0.4.1</config.bootstrap.version>
-        <registry.bootstrap.version>0.4.1</registry.bootstrap.version>
-        <gateway.bootstrap.version>0.4.1</gateway.bootstrap.version>
-        <authentication.bootstrap.version>0.4.1</authentication.bootstrap.version>
-        <admin.instance.bootstrap.version>0.4.1</admin.instance.bootstrap.version>
-        <admin.bootstrap.version>0.4.1</admin.bootstrap.version>
-        <dam.bootstrap.version>0.4.1</dam.bootstrap.version>
-        <catalog.bootstrap.version>0.4.1</catalog.bootstrap.version>
-        <access.bootstrap.version>0.4.1</access.bootstrap.version>
-        <accessproject.bootstrap.version>0.4.1</accessproject.bootstrap.version>
-        <storage.bootstrap.version>0.4.1</storage.bootstrap.version>
-        <dataprovider.bootstrap.version>0.4.1</dataprovider.bootstrap.version>
-        <order.bootstrap.version>0.4.1</order.bootstrap.version>
-        <ingest.bootstrap.version>0.4.1</ingest.bootstrap.version>
-        <frontend.bootstrap.version>0.4.1</frontend.bootstrap.version>
+        <config.bootstrap.version>1.0.1</config.bootstrap.version>
+        <registry.bootstrap.version>1.0.1</registry.bootstrap.version>
+        <gateway.bootstrap.version>1.0.1</gateway.bootstrap.version>
+        <authentication.bootstrap.version>1.0.1</authentication.bootstrap.version>
+        <admin.instance.bootstrap.version>1.0.1</admin.instance.bootstrap.version>
+        <admin.bootstrap.version>1.0.1</admin.bootstrap.version>
+        <dam.bootstrap.version>1.0.1</dam.bootstrap.version>
+        <catalog.bootstrap.version>1.0.1</catalog.bootstrap.version>
+        <access.bootstrap.version>1.0.1</access.bootstrap.version>
+        <accessproject.bootstrap.version>1.0.1</accessproject.bootstrap.version>
+        <storage.bootstrap.version>1.0.1</storage.bootstrap.version>
+        <dataprovider.bootstrap.version>1.0.1</dataprovider.bootstrap.version>
+        <order.bootstrap.version>1.0.1</order.bootstrap.version>
+        <ingest.bootstrap.version>1.0.1</ingest.bootstrap.version>
+        <frontend.bootstrap.version>1.0.1</frontend.bootstrap.version>
 
         <!-- Tests -->
-        <regards.test.version>0.4.1</regards.test.version>
-        <regards.integration.test.version>0.4.1</regards.integration.test.version>
-        <regards.test.reporting.version>0.4.1</regards.test.reporting.version>
+        <regards.test.version>1.0.1</regards.test.version>
+        <regards.integration.test.version>1.0.1</regards.integration.test.version>
+        <regards.test.reporting.version>1.0.1</regards.test.reporting.version>
 
         <!-- Regards utils -->
-        <file.utils.version>0.4.1</file.utils.version>
-        <spring.utils.version>0.4.1</spring.utils.version>
-        <exception.utils.version>0.4.1</exception.utils.version>
+        <file.utils.version>1.0.1</file.utils.version>
+        <spring.utils.version>1.0.1</spring.utils.version>
+        <exception.utils.version>1.0.1</exception.utils.version>
 
         <!-- Regards Modules -->
-        <fr.cnes.regards.framework.modules.jobs.version>0.4.1</fr.cnes.regards.framework.modules.jobs.version>
-        <fr.cnes.regards.framework.modules.workspace.version>0.4.1
+        <fr.cnes.regards.framework.modules.jobs.version>1.0.1</fr.cnes.regards.framework.modules.jobs.version>
+        <fr.cnes.regards.framework.modules.workspace.version>1.0.1
         </fr.cnes.regards.framework.modules.workspace.version>
-        <fr.cnes.regards.framework.modules.plugins.version>0.4.1
+        <fr.cnes.regards.framework.modules.plugins.version>1.0.1
         </fr.cnes.regards.framework.modules.plugins.version>
-        <fr.cnes.regards.framework.modules.locks.version>0.4.1
+        <fr.cnes.regards.framework.modules.locks.version>1.0.1
         </fr.cnes.regards.framework.modules.locks.version>
-        <fr.cnes.regards.microservices.catalog.plugin-client.version>0.4.1
+        <fr.cnes.regards.microservices.catalog.plugin-client.version>1.0.1
         </fr.cnes.regards.microservices.catalog.plugin-client.version>
-        <fr.cnes.regards.utils.plugin-utils.version>0.4.1</fr.cnes.regards.utils.plugin-utils.version>
-        <fr.cnes.regards.modules.project.version>0.4.1</fr.cnes.regards.modules.project.version>
-        <fr.cnes.regards.modules.crawler.version>0.4.1</fr.cnes.regards.modules.crawler.version>
-        <fr.cnes.regards.modules.indexer.version>0.4.1</fr.cnes.regards.modules.indexer.version>
-        <fr.cnes.regards.modules.accessrights-instance.version>0.4.1
+        <fr.cnes.regards.utils.plugin-utils.version>1.0.1</fr.cnes.regards.utils.plugin-utils.version>
+        <fr.cnes.regards.modules.project.version>1.0.1</fr.cnes.regards.modules.project.version>
+        <fr.cnes.regards.modules.session-manager.version>1.0.1</fr.cnes.regards.modules.session-manager.version>
+        <fr.cnes.regards.modules.crawler.version>1.0.1</fr.cnes.regards.modules.crawler.version>
+        <fr.cnes.regards.modules.indexer.version>1.0.1</fr.cnes.regards.modules.indexer.version>
+        <fr.cnes.regards.modules.accessrights-instance.version>1.0.1
         </fr.cnes.regards.modules.accessrights-instance.version>
-        <fr.cnes.regards.modules.accessrights.version>0.4.1</fr.cnes.regards.modules.accessrights.version>
-        <fr.cnes.regards.modules.access.version>0.4.1</fr.cnes.regards.modules.access.version>
-        <fr.cnes.regards.modules.uiconfiguration.version>0.4.1
+        <fr.cnes.regards.modules.accessrights.version>1.0.1</fr.cnes.regards.modules.accessrights.version>
+        <fr.cnes.regards.modules.access.version>1.0.1</fr.cnes.regards.modules.access.version>
+        <fr.cnes.regards.modules.uiconfiguration.version>1.0.1
         </fr.cnes.regards.modules.uiconfiguration.version>
-        <fr.cnes.regards.modules.dam.version>0.4.1</fr.cnes.regards.modules.dam.version>
-        <fr.cnes.regards.frontend-webapp.version>0.4.1</fr.cnes.regards.frontend-webapp.version>
-        <fr.cnes.regards.modules.emails.version>0.4.1</fr.cnes.regards.modules.emails.version>
-        <fr.cnes.regards.modules.notification.version>0.4.1</fr.cnes.regards.modules.notification.version>
-        <fr.cnes.regards.modules.notification-instance.version>0.4.1</fr.cnes.regards.modules.notification-instance.version>
-        <fr.cnes.regards.modules.metrics.version>0.4.1</fr.cnes.regards.modules.metrics.version>
-        <fr.cnes.regards.modules.templates.version>0.4.1</fr.cnes.regards.modules.templates.version>
-        <fr.cnes.regards.modules.storage.version>0.4.1</fr.cnes.regards.modules.storage.version>
-        <fr.cnes.regards.modules.dataprovider.version>0.4.1</fr.cnes.regards.modules.dataprovider.version>
-        <fr.cnes.regards.modules.search.version>0.4.1</fr.cnes.regards.modules.search.version>
-        <fr.cnes.regards.modules.opensearch.version>0.4.1</fr.cnes.regards.modules.opensearch.version>
-        <fr.cnes.regards.modules.order.version>0.4.1</fr.cnes.regards.modules.order.version>
-        <fr.cnes.regards.modules.ingest.version>0.4.1</fr.cnes.regards.modules.ingest.version>
-        <fr.cnes.regards.modules.catalog-services.version>0.4.1
+        <fr.cnes.regards.modules.dam.version>1.0.1</fr.cnes.regards.modules.dam.version>
+        <fr.cnes.regards.frontend-webapp.version>1.0.1</fr.cnes.regards.frontend-webapp.version>
+        <fr.cnes.regards.modules.emails.version>1.0.1</fr.cnes.regards.modules.emails.version>
+        <fr.cnes.regards.modules.notification.version>1.0.1</fr.cnes.regards.modules.notification.version>
+        <fr.cnes.regards.modules.notification-instance.version>1.0.1</fr.cnes.regards.modules.notification-instance.version>
+        <fr.cnes.regards.modules.metrics.version>1.0.1</fr.cnes.regards.modules.metrics.version>
+        <fr.cnes.regards.modules.templates.version>1.0.1</fr.cnes.regards.modules.templates.version>
+        <fr.cnes.regards.modules.dataprovider.version>1.0.1</fr.cnes.regards.modules.dataprovider.version>
+        <fr.cnes.regards.modules.search.version>1.0.1</fr.cnes.regards.modules.search.version>
+        <fr.cnes.regards.modules.opensearch.version>1.0.1</fr.cnes.regards.modules.opensearch.version>
+        <fr.cnes.regards.modules.order.version>1.0.1</fr.cnes.regards.modules.order.version>
+        <fr.cnes.regards.modules.ingest.version>1.0.1</fr.cnes.regards.modules.ingest.version>
+        <fr.cnes.regards.modules.storage.version>1.0.1</fr.cnes.regards.modules.storage.version>
+        <fr.cnes.regards.modules.catalog-services.version>1.0.1
         </fr.cnes.regards.modules.catalog-services.version>
-        <fr.cnes.regards.modules.access-services.version>0.4.1
+        <fr.cnes.regards.modules.access-services.version>1.0.1
         </fr.cnes.regards.modules.access-services.version>
-        <fr.cnes.regards.modules.backend-for-frontend.version>0.4.1
+        <fr.cnes.regards.modules.backend-for-frontend.version>1.0.1
         </fr.cnes.regards.modules.backend-for-frontend.version>
 
         <!-- Regards Administration tenant resolvers -->
-        <fr.cnes.regards.microservices.administration.local-tenant-resolver.version>0.4.1
+        <fr.cnes.regards.microservices.administration.local-tenant-resolver.version>1.0.1
         </fr.cnes.regards.microservices.administration.local-tenant-resolver.version>
-        <fr.cnes.regards.microservices.administration.remote-tenant-resolver.version>0.4.1
+        <fr.cnes.regards.microservices.administration.remote-tenant-resolver.version>1.0.1
         </fr.cnes.regards.microservices.administration.remote-tenant-resolver.version>
         <!-- Regards Administration authorities provider -->
-        <fr.cnes.regards.microservices.administration.local-authorities-provider>0.4.1
+        <fr.cnes.regards.microservices.administration.local-authorities-provider>1.0.1
         </fr.cnes.regards.microservices.administration.local-authorities-provider>
-        <fr.cnes.regards.microservices.administration.remote-authorities-provider>0.4.1
+        <fr.cnes.regards.microservices.administration.remote-authorities-provider>1.0.1
         </fr.cnes.regards.microservices.administration.remote-authorities-provider>
 
-        <custom.deployment.version>0.4.1</custom.deployment.version>
+        <custom.deployment.version>1.0.1</custom.deployment.version>
 
-        <fr.cnes.regards.modules.ingest.plugins.version>0.4.1</fr.cnes.regards.modules.ingest.plugins.version>
-        <fr.cnes.regards.modules.acquisition.plugins.version>0.4.1
+        <fr.cnes.regards.modules.ingest.plugins.version>1.0.1</fr.cnes.regards.modules.ingest.plugins.version>
+        <fr.cnes.regards.modules.acquisition.plugins.version>1.0.1
         </fr.cnes.regards.modules.acquisition.plugins.version>
 
         <!-- CNES remote storages -->
-        <fr.cnes.regards.storages.version>0.4.1</fr.cnes.regards.storages.version>
-        <fr.cnes.regards.storages.staf.version>0.4.1</fr.cnes.regards.storages.staf.version>
-        <fr.cnes.regards.storages.hpss.version>0.4.1</fr.cnes.regards.storages.hpss.version>
-        <fr.cnes.regards.storages.mission.version>0.4.1</fr.cnes.regards.storages.mission.version>
-        <fr.cnes.regards.storages.noop.version>0.4.1</fr.cnes.regards.storages.noop.version>
+        <fr.cnes.regards.storages.version>1.0.1</fr.cnes.regards.storages.version>
+        <fr.cnes.regards.storages.staf.version>1.0.1</fr.cnes.regards.storages.staf.version>
+	<fr.cnes.regards.storages.hpss.version>1.0.1</fr.cnes.regards.storages.hpss.version>
+
+	<!-- CNES Acquisition plugins -->
+	<microscope.acquisition.plugins.version>1.0.1</microscope.acquisition.plugins.version>
+	<swh.acquisition.plugins.version>1.0.1</swh.acquisition.plugins.version>
 
         <!-- COTS -->
         <!-- Flywaydb dependency from spring-boot -->
@@ -217,17 +220,23 @@
         <org.apache.commons.bean-utils.version>1.9.3</org.apache.commons.bean-utils.version>
         <org.hipparchus.version>1.3</org.hipparchus.version>
         <org.geotools.version>19.1</org.geotools.version>
+        <org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
     </properties>
-
-
-    <distributionManagement>
-		<repository>
+	<distributionManagement>
+                <snapshotRepository>
+                        <uniqueVersion>true</uniqueVersion>
+                        <id>maven-snapshot-regards</id>
+                        <name>Nexus Maven Repository for regards artifacts</name>
+                        <url>https://172.26.46.158:8443/repository/maven-snapshot-regards/</url>
+                </snapshotRepository>
+                <repository>
                         <uniqueVersion>true</uniqueVersion>
                         <id>nexus-maven-regards</id>
                         <name>Nexus Maven Repository for regards artifacts</name>
                         <url>https://172.26.46.158:8443/repository/nexus-maven-regards/</url>
                 </repository>
         </distributionManagement>
+
     <dependencyManagement>
         <dependencies>
 
@@ -583,43 +592,71 @@
                 <artifactId>project-client</artifactId>
                 <version>${fr.cnes.regards.modules.project.version}</version>
             </dependency>
+
+            <!-- Session manager -->
+            <dependency>
+                <groupId>fr.cnes.regards.modules.session-manager</groupId>
+                <artifactId>session-manager-rest</artifactId>
+                <version>${fr.cnes.regards.modules.session-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.session-manager</groupId>
+                <artifactId>session-manager-client</artifactId>
+                <version>${fr.cnes.regards.modules.session-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.session-manager</groupId>
+                <artifactId>session-manager-service</artifactId>
+                <version>${fr.cnes.regards.modules.session-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.session-manager</groupId>
+                <artifactId>session-manager-domain</artifactId>
+                <version>${fr.cnes.regards.modules.session-manager.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.session-manager</groupId>
+                <artifactId>session-manager-dao</artifactId>
+                <version>${fr.cnes.regards.modules.session-manager.version}</version>
+            </dependency>
+
             <!-- Datasource plugins -->
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>db-datasource-common</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>datasource-oracle-plugins</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>datasource-oracle-plugins</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
                 <classifier>shaded</classifier>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>postgresql-datasource</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>postgresql-datasource</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
                 <classifier>shaded</classifier>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>aip-datasource</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam.plugins.datasources</groupId>
                 <artifactId>aip-datasource</artifactId>
-                <version>0.4.1</version>
+                <version>1.0.1</version>
                 <classifier>shaded</classifier>
             </dependency>
             <!-- DAM -->
@@ -631,6 +668,11 @@
             <dependency>
                 <groupId>fr.cnes.regards.modules.dam</groupId>
                 <artifactId>dam-domain</artifactId>
+                <version>${fr.cnes.regards.modules.dam.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.dam</groupId>
+                <artifactId>dam-dto</artifactId>
                 <version>${fr.cnes.regards.modules.dam.version}</version>
             </dependency>
             <dependency>
@@ -807,11 +849,6 @@
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.storage</groupId>
-                <artifactId>storage-plugin</artifactId>
-                <version>${fr.cnes.regards.modules.storage.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>fr.cnes.regards.modules.storage</groupId>
                 <artifactId>storage-service</artifactId>
                 <version>${fr.cnes.regards.modules.storage.version}</version>
             </dependency>
@@ -822,20 +859,13 @@
             </dependency>
             <dependency>
                 <groupId>fr.cnes.regards.modules.storage</groupId>
-                <artifactId>storage-dao</artifactId>
+                <artifactId>storage-dto</artifactId>
                 <version>${fr.cnes.regards.modules.storage.version}</version>
             </dependency>
-            <!-- Storage security delegation plugin -->
             <dependency>
-                <groupId>fr.cnes.regards.modules.storage.plugins</groupId>
-                <artifactId>catalog-security-delegation</artifactId>
-                <version>0.4.1</version>
-            </dependency>
-            <dependency>
-                <groupId>fr.cnes.regards.modules.storage.plugins</groupId>
-                <artifactId>catalog-security-delegation</artifactId>
-                <version>0.4.1</version>
-                <classifier>shaded</classifier>
+                <groupId>fr.cnes.regards.modules.storage</groupId>
+                <artifactId>storage-dao</artifactId>
+                <version>${fr.cnes.regards.modules.storage.version}</version>
             </dependency>
             <!-- Data provider -->
             <dependency>
@@ -861,7 +891,13 @@
             <dependency>
                 <groupId>fr.cnes.regards.modules.acquisition</groupId>
                 <artifactId>microscope-plugins</artifactId>
-                <version>${fr.cnes.regards.modules.dataprovider.version}</version>
+                <version>${microscope.acquisition.plugins.version}</version>
+                <classifier>shaded</classifier>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.acquisition</groupId>
+                <artifactId>swh-plugins</artifactId>
+                <version>${swh.acquisition.plugins.version}</version>
                 <classifier>shaded</classifier>
             </dependency>
             <dependency>
@@ -1052,12 +1088,6 @@
                 <version>${fr.cnes.regards.modules.ingest.plugins.version}</version>
                 <classifier>shaded</classifier>
             </dependency>
-            <dependency>
-                <groupId>fr.cnes.regards.modules.acquisition.plugins</groupId>
-                <artifactId>microscope</artifactId>
-                <version>${fr.cnes.regards.modules.acquisition.plugins.version}</version>
-                <classifier>shaded</classifier>
-            </dependency>
             <!-- CNES REMOTE STORAGES -->
             <dependency>
                 <groupId>fr.cnes.regards.modules.storage</groupId>
@@ -1112,18 +1142,6 @@
                 <groupId>fr.cnes.regards.modules.storage</groupId>
                 <artifactId>hpss-data-storage-plugin</artifactId>
                 <version>${fr.cnes.regards.storages.hpss.version}</version>
-                <classifier>shaded</classifier>
-            </dependency>
-            <dependency>
-                <groupId>fr.cnes.regards.modules.storage</groupId>
-                <artifactId>mission-allocation-strategy-plugin</artifactId>
-                <version>${fr.cnes.regards.storages.mission.version}</version>
-                <classifier>shaded</classifier>
-            </dependency>
-            <dependency>
-                <groupId>fr.cnes.regards.modules.storage</groupId>
-                <artifactId>noop-allocation-strategy-plugin</artifactId>
-                <version>${fr.cnes.regards.storages.noop.version}</version>
                 <classifier>shaded</classifier>
             </dependency>
             <!-- COTS -->
@@ -1482,6 +1500,12 @@
                 <artifactId>custom-components</artifactId>
                 <version>${custom.deployment.version}</version>
             </dependency>
+            <!-- DTO Mapper -->
+            <dependency>
+        		<groupId>org.mapstruct</groupId>
+        		<artifactId>mapstruct</artifactId>
+        		<version>${org.mapstruct.version}</version>
+    		</dependency>
         </dependencies>
     </dependencyManagement>
 
