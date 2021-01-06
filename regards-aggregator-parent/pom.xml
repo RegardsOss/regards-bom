@@ -23,8 +23,13 @@
 
     <groupId>fr.cnes.regards</groupId>
     <artifactId>regards-aggregator-parent</artifactId>
-    <version>1.2.1</version>
+    <version>1.4.0</version>
     <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <description>Aggregates all microservices and the frontend</description>
     <url>https://github.com/RegardsOss/RegardsOss.github.io</url>

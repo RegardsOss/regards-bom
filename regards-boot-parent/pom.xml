@@ -49,14 +49,14 @@
     <parent>
         <groupId>fr.cnes.regards</groupId>
         <artifactId>regards-parent</artifactId>
-        <version>1.2.1</version>
+        <version>1.4.0</version>
         <relativePath>../regards-parent/</relativePath>
     </parent>
 
     <properties>
         <microservice.heap.size>256m</microservice.heap.size>
         <!-- Default entrypoint for microservices, it should be overridden if needed -->
-	<docker.entryPoint>["./wait-for-it.sh", "rs-config:9031", "-t", "0", "--", "./wait-for-it.sh", "rs-registry:9032", "-t", "0", "--","./wait-for-it.sh", "rs-admin:9033", "-t", "0", "--", "./start.sh","${project.build.finalName}.${project.packaging}","-Xmx${microservice.heap.size}"]
+		<docker.entryPoint>["./wait-for-it.sh", "rs-config:9031", "-t", "0", "--", "./wait-for-it.sh", "rs-registry:9032", "-t", "0", "--","./wait-for-it.sh", "rs-admin:9033", "-t", "0", "--", "./start.sh","${project.build.finalName}.${project.packaging}","-Xmx${microservice.heap.size}"]
         </docker.entryPoint>
     </properties>
 
@@ -66,7 +66,7 @@
                 <plugin>
                     <groupId>com.spotify</groupId>
                     <artifactId>docker-maven-plugin</artifactId>
-                    <version>0.4.11</version>
+                    <version>1.2.2</version>
                     <configuration>
                         <retryPushCount>0</retryPushCount>
                         <skipDockerBuild>false</skipDockerBuild>
@@ -113,7 +113,7 @@
                         <dependency>
                             <groupId>fr.cnes.regards</groupId>
                             <artifactId>regards-suppress-cve</artifactId>
-                            <version>1.2.1</version>
+                            <version>1.4.0</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -139,7 +139,7 @@
 	<dependency>
             <groupId>fr.cnes.regards</groupId>
             <artifactId>regards-suppress-cve</artifactId>
-            <version>1.2.1</version>
+            <version>1.4.0</version>
         </dependency>
 </dependencies>
 

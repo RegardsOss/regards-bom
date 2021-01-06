@@ -15,7 +15,7 @@
 
 	<groupId>fr.cnes.regards</groupId>
 	<artifactId>regards-dependencies</artifactId>
-	<version>1.2.1</version>
+	<version>1.4.0</version>
 	<packaging>pom</packaging>
 
 	<description>Declares the dependency management for the whole system</description>
@@ -40,8 +40,8 @@
 		</developer>
 	</developers>
 
-	<properties>
-		<regards.version>1.2.1</regards.version>
+    <properties>
+		<regards.version>1.4.0</regards.version>
 
         <!-- Framework starters -->
 		<amqp.starter.version>${regards.version}</amqp.starter.version>
@@ -71,6 +71,7 @@
 		<encryption.starter.version>${regards.version}</encryption.starter.version>
 		<metric.starter.version>${regards.version}</metric.starter.version>
 		<random.starter.version>${regards.version}</random.starter.version>
+		<dump.starter.version>${regards.version}</dump.starter.version>
 
         <!-- Bootstrap -->
 		<config.bootstrap.version>${regards.version}</config.bootstrap.version>
@@ -119,6 +120,7 @@
 		<modules.dam.version>${regards.version}</modules.dam.version>
 		<modules.model.version>${regards.version}</modules.model.version>
 		<modules.feature.version>${regards.version}</modules.feature.version>
+		<modules.featureprovider.version>${regards.version}</modules.featureprovider.version>
 		<modules.emails.version>${regards.version}</modules.emails.version>
 		<modules.notifier.version>${regards.version}</modules.notifier.version>
 		<modules.notification.version>${regards.version}</modules.notification.version>
@@ -133,6 +135,7 @@
 		<modules.catalog-services.version>${regards.version}</modules.catalog-services.version>
 		<modules.access-services.version>${regards.version}</modules.access-services.version>
 		<modules.backend-for-frontend.version>${regards.version}</modules.backend-for-frontend.version>
+        <modules.processing.version>${regards.version}</modules.processing.version>
 
 		<!-- FRONTEND -->
 		<fr.cnes.regards.frontend-webapp.version>${regards.version}</fr.cnes.regards.frontend-webapp.version>
@@ -221,6 +224,8 @@
 		<org.geotools.version>19.1</org.geotools.version>
 		<org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
 		<schedlock.version>4.8.0</schedlock.version>
+		<net.sf.expectit.expectit-core.version>0.9.0</net.sf.expectit.expectit-core.version>
+		<com.jcraft.jsch.version>0.1.55</com.jcraft.jsch.version>
 	</properties>
 	<distributionManagement>
 		<snapshotRepository>
@@ -278,6 +283,11 @@
 			</dependency>
 			<dependency>
 				<groupId>fr.cnes.regards.framework</groupId>
+				<artifactId>feign-regards</artifactId>
+				<version>${feign.starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.framework</groupId>
 				<artifactId>feign-regards-starter</artifactId>
 				<version>${feign.starter.version}</version>
 			</dependency>
@@ -326,6 +336,11 @@
 				<groupId>fr.cnes.regards.framework</groupId>
 				<artifactId>json-random-starter</artifactId>
 				<version>${random.starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.framework</groupId>
+				<artifactId>json-dump-starter</artifactId>
+				<version>${dump.starter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>fr.cnes.regards.framework</groupId>
@@ -540,6 +555,27 @@
 				<groupId>fr.cnes.regards.framework.modules.workspace</groupId>
 				<artifactId>workspace-rest</artifactId>
 				<version>${framework.modules.workspace.version}</version>
+			</dependency>
+			<!-- Dump -->
+			<dependency>
+				<groupId>fr.cnes.regards.framework.modules.dump</groupId>
+				<artifactId>dump-domain</artifactId>
+				<version>${dump.starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.framework.modules.dump</groupId>
+				<artifactId>dump-dao</artifactId>
+				<version>${dump.starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.framework.modules.dump</groupId>
+				<artifactId>dump-service</artifactId>
+				<version>${dump.starter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.framework.modules.dump</groupId>
+				<artifactId>dump-rest</artifactId>
+				<version>${dump.starter.version}</version>
 			</dependency>
             <!-- Regards Locks -->
 			<dependency>
@@ -828,6 +864,32 @@
 				<artifactId>feature-client</artifactId>
 				<version>${modules.feature.version}</version>
 			</dependency>
+			<!-- Feature provider -->
+			<dependency>
+				<groupId>fr.cnes.regards.modules.featureprovider</groupId>
+				<artifactId>featureprovider-dao</artifactId>
+				<version>${modules.featureprovider.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.modules.featureprovider</groupId>
+				<artifactId>featureprovider-domain</artifactId>
+				<version>${modules.featureprovider.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.modules.featureprovider</groupId>
+				<artifactId>featureprovider-rest</artifactId>
+				<version>${modules.featureprovider.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.modules.featureprovider</groupId>
+				<artifactId>featureprovider-service</artifactId>
+				<version>${modules.featureprovider.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.modules.featureprovider</groupId>
+				<artifactId>featureprovider-client</artifactId>
+				<version>${modules.featureprovider.version}</version>
+			</dependency>
             <!-- Crawler -->
 			<dependency>
 				<groupId>fr.cnes.regards.modules.crawler</groupId>
@@ -1103,17 +1165,22 @@
 				<version>${fr.cnes.regards.framework.notification.version}</version>
 			</dependency>
             <!-- Notifier -->
-            <dependency>
+			<dependency>
+				<groupId>fr.cnes.regards.modules.notifier</groupId>
+				<artifactId>notifier-client</artifactId>
+				<version>${modules.notifier.version}</version>
+			</dependency>
+			<dependency>
                 <groupId>fr.cnes.regards.modules.notifier</groupId>
                 <artifactId>notifier-rest</artifactId>
                 <version>${modules.notifier.version}</version>
             </dependency>
-            <dependency>
+			<dependency>
                 <groupId>fr.cnes.regards.modules.notifier</groupId>
                 <artifactId>notifier-domain</artifactId>
                 <version>${modules.notifier.version}</version>
             </dependency>
-            <dependency>
+			<dependency>
                 <groupId>fr.cnes.regards.modules.notifier</groupId>
                 <artifactId>notifier-dao</artifactId>
                 <version>${modules.notifier.version}</version>
@@ -1225,6 +1292,29 @@
 				<artifactId>enhanced-descriptive-aip-generation</artifactId>
 				<version>${modules.ingest.plugins.version}</version>
 				<classifier>shaded</classifier>
+			</dependency>
+            <!-- Ingest post processing plugin -->
+			<dependency>
+				<groupId>fr.cnes.regards.modules.ingest</groupId>
+				<artifactId>ssalto-sipad-postprocessing</artifactId>
+				<version>${modules.ingest.plugins.version}</version>
+				<classifier>shaded</classifier>
+            </dependency>
+            <!-- Processing -->
+            <dependency>
+                <groupId>fr.cnes.regards.modules.processing</groupId>
+                <artifactId>processing-client</artifactId>
+                <version>${modules.processing.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.processing</groupId>
+                <artifactId>processing-domain-data</artifactId>
+                <version>${modules.processing.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>fr.cnes.regards.modules.processing</groupId>
+                <artifactId>processing-order-commons</artifactId>
+                <version>${modules.processing.version}</version>
 			</dependency>
             <!-- CNES REMOTE STORAGES -->
 			<dependency>
@@ -1440,28 +1530,6 @@
 				<artifactId>gson</artifactId>
 				<version>${com.google.code.gson.version}</version>
 			</dependency>
-            <!-- Spring REST docs -->
-<!--             <dependency>
-                <groupId>org.springframework.restdocs</groupId>
-                <artifactId>spring-restdocs-core</artifactId>
-                <version>${org.springframework.spring-restdocs.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.restdocs</groupId>
-                <artifactId>spring-restdocs-mockmvc</artifactId>
-                <version>${org.springframework.spring-restdocs.version}</version>
-            </dependency> -->
-            <!-- FIXME AMQP / to be removed with Spring Boot 2.2 -->
-<!--         	<dependency>
-            	<groupId>org.springframework.amqp</groupId>
-            	<artifactId>spring-rabbit</artifactId>
-            	<version>2.2.0.RELEASE</version>
-        	</dependency>
-        	<dependency>
-            	<groupId>org.springframework.amqp</groupId>
-            	<artifactId>spring-amqp</artifactId>
-            	<version>2.2.0.RELEASE</version>
-        	</dependency> -->
             <!-- Maven plugins -->
 			<dependency>
 				<groupId>org.apache.maven</groupId>
@@ -1580,6 +1648,16 @@
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
 				<version>${org.apache.commons.bean-utils.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jcraft</groupId>
+				<artifactId>jsch</artifactId>
+				<version>${com.jcraft.jsch.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sf.expectit</groupId>
+				<artifactId>expectit-core</artifactId>
+				<version>${net.sf.expectit.expectit-core.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.hipparchus</groupId>
