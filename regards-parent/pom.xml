@@ -19,7 +19,7 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
 	<groupId>fr.cnes.regards</groupId>
 	<artifactId>regards-parent</artifactId>
@@ -27,7 +27,7 @@
 	<packaging>pom</packaging>
 
 	<description>Aggregates business modules, regards-boot-parent-project and regards-frontend-project</description>
-	<url>https://github.com/RegardsOss/RegardsOss.github.io</url>
+    <url>https://github.com/RegardsOss/RegardsOss.github.io</url>
 	<inceptionYear>2016</inceptionYear>
 	<licenses>
 		<license>
